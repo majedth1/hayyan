@@ -3,12 +3,12 @@ version: "3.8"
 services:
   frontend:
     build:
-      context: ./fbusiness       
+      context: ./frontend      
       dockerfile: Dockerfile      
     ports:
       - "3000:3000"             
     volumes:
-      - ./fbusiness:/app         
+      - ./frontend:/app         
       - node_modules:/app/node_modules  
     command: npm run dev          
     environment:
